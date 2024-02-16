@@ -1,0 +1,99 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh- 4rem);
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7 1rem;
+    margin-top: 5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.worksTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+    border-bottom: 3px solid #4C5059;
+
+}
+
+.worksDesc{
+  font-size: 1rem;
+    line-height: 2.1;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 1.5px; 
+    text-indent: 6px; 
+    color: black; 
+
+}
+.worksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 75rem;
+  cursor: pointer;
+}
+.worksImg:hover {
+  transform: scale(1.05);
+}
+.worksImg {
+  object-fit: cover;
+  width: 100vw; 
+  height: auto; 
+  max-width: 20rem; 
+  margin: 0.5rem;
+  transition: transform 0.3s ease; 
+}
+
+.worksBtn{
+    margin: 3rem 3rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: linear-gradient(to bottom, #D1958A, #4C5059);
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+    #works, .skillsContainer {
+      max-width: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .desktopMenu, .navMenu {
+      display: none;
+    }
+    .mobMenu {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    #contactPage {
+      max-width: 85%;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+  .worksImg {
+      max-width: calc(90% - 1rem); 
+  }
+}
